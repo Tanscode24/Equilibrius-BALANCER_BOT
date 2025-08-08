@@ -16,5 +16,12 @@ MPU6050 mpu;
 #define SDA_PIN 21   // I2C Data
 #define SCL_PIN 22   // I2C Clock
 
+// PID OBJECT 
+double setpt = 0;
+double input,output;
+double kp = 35, ki = 0.7, kd = 1.2;
+PID myPID(&input, &output, &setpoint, kp, ki, kd, DIRECT);
+
+
 
 
