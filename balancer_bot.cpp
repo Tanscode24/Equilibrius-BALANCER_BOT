@@ -22,6 +22,15 @@ double input,output;
 double kp = 35, ki = 0.7, kd = 1.2;
 PID myPID(&input, &output, &setpoint, kp, ki, kd, DIRECT);
 
+// SERIAL COMMUNICATION 
+void setup()
+{
+  serial.begin(115200); //start serial 
+  wire.begin(21,22);
+  
+}
+  
+
 
 
 
