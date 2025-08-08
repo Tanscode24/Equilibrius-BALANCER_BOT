@@ -29,7 +29,12 @@ void setup()
   wire.begin(21,22);
   
 }
+
+// MPU SETUP
+mpu.intialize()
   
+  
+
 
 
 
