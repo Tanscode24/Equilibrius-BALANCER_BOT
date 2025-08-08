@@ -37,7 +37,13 @@ void setup()
     serial.println("MPU6050 connection successful");
 
   }
-  
+  // PIN MODE SETUP 
+  pinMode(ENA, output);
+  pinMode(ENB, output);
+  pinMode(IN1, output);
+  pinMode(IN2, output);
+  pinMode(IN3, output);
+  pinMode(IN4, output);
   
 }
 
@@ -45,6 +51,7 @@ void setup()
   
   
   
+
 
 
 
