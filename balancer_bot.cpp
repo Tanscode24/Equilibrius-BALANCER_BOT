@@ -44,6 +44,11 @@ void setup()
   pinMode(IN2, output);
   pinMode(IN3, output);
   pinMode(IN4, output);
+
+  pid.SetMode(AUTOMATIC);
+  pid.SetSampleTime(10);
+  pid.SetOutputLimits(-225,225);
+  
   
 }
 
@@ -51,6 +56,7 @@ void setup()
   
   
   
+
 
 
 
