@@ -27,13 +27,25 @@ void setup()
 {
   serial.begin(115200); //start serial 
   wire.begin(21,22);
+  // MPU SETUP
+  mpu.intialize(); // intializing the sensor 
+  if (!mpu.testconnection()){
+    serial.println("MPU6050 connection failed");
+    while(1);
+  }
+  else {
+    serial.println("MPU6050 connection successful");
+
+  }
+  
   
 }
 
-// MPU SETUP
-mpu.intialize()
+
   
   
+  
+
 
 
 
