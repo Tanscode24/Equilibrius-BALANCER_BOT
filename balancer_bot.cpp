@@ -2,4 +2,19 @@
 #include <MPU6050.h>
 #include <PID_v1.h>
 MPU6050 mpu;
+// Motor A pins (L298N)
+#define ENA 33     // PWM for Motor A
+#define IN1 14     // Direction A
+#define IN2 27     // Direction A
+
+// Motor B pins (L298N)
+#define ENB 32     // PWM for Motor B
+#define IN3 26     // Direction B
+#define IN4 25     // Direction B
+
+// MPU6050 I2C Pins (default ESP32 I2C pins)
+#define SDA_PIN 21   // I2C Data
+#define SCL_PIN 22   // I2C Clock
+
+
 
